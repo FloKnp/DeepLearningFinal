@@ -13,8 +13,9 @@ The issue with all there approaches was that the network returned the same resul
 I then implemented a simple way to let the AI play against itself. It uses an opening database for the first moves. Opening databases check if the current position is a position they know. If yes they return the best move for the current position. These were created by professional chess players and other chess AI´s and help the AI to play better in the first moves. But when my AI reaches the end of the opening book it just starts to make random moves. This makes total sense given that the neural network evaluates all positions equally leading to a random selection of a move. 
 I did not think that creating a chess AI in this way would be so hard. The positions are way more complex than I thought, at least I was hoping for the Network to find some sort of similarity between "good" and "bad" positions. This kind of approach is rarely used in the creation of competitive engines and now I understand why. The common way to do it is to let the AI play against itself, rewarding it for winning and punishing it for loosing. But this requires a huge amount of computing power and takes a long time. I wanted to try some of the alternatives which in the end did not work out too well. 
 
-This is the jupyter notebook I used for the project: https://colab.research.google.com/drive/1ScKOzKAngA1HoU_pfJbp58ujIdrxA6Sb#scrollTo=HreKuYRmsFBX
+This is the jupyter notebook I used for the project: https://colab.research.google.com/drive/1ScKOzKAngA1HoU_pfJbp58ujIdrxA6Sb
 
 ![Chess01](https://user-images.githubusercontent.com/91910483/207732119-4814826f-dca6-45c5-ba53-85813c925fec.PNG)
 ![chess02](https://user-images.githubusercontent.com/91910483/207732137-7dcc8768-075f-4ba4-ab0c-888f07f55207.PNG)
+
 These are some examples for the network making random moves. In the first image black just moves the knight in from of the pawn where it can be captured. And on the next move white does not take the knight but moves its own knight without any reason for it. 
