@@ -1,6 +1,8 @@
 # DeepLearningFinal
 UW Deep Learning Final Project
 
+Video: https://youtu.be/9lMMUyqHQi4
+
 Abstract: 
 The idea was to create a chess AI based on evaluations from existing chess engines. If successful this would be much easier than trying to teach the AI how to play chess from the very beginning. The AI just tries to find the correct evaluation for a given position and makes the move that leads to the best highest evaluation.
 
